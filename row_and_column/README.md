@@ -1,4 +1,4 @@
-# [코드팩토리][초급] splash_screen
+# [코드팩토리][초급] row_and_column
 
 ## 메모
 
