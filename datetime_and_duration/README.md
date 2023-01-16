@@ -52,7 +52,7 @@ print(now.isAfter(specifyDay)); // true
 print(now.isBefore(specifyDay)); // false
 ```
 
-## 날짜/시간 계산
+## `날짜/시간 덧뺄셈`
 
 ```dart
 print(now); // 2023-01-15 14:13:56.775863
