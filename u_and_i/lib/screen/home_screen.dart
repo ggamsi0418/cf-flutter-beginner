@@ -10,9 +10,9 @@ class HomeScreen extends StatefulWidget {
 
 class _HomeScreenState extends State<HomeScreen> {
   DateTime selectedDate = DateTime(
-    DateTime.now().add(const Duration(hours: 9)).year,
-    DateTime.now().add(const Duration(hours: 9)).month,
-    DateTime.now().add(const Duration(hours: 9)).day,
+    DateTime.now().year,
+    DateTime.now().month,
+    DateTime.now().day,
   );
 
   @override
@@ -38,7 +38,7 @@ class _HomeScreenState extends State<HomeScreen> {
   }
 
   void onHeartPressed() {
-    final now = DateTime.now().add(const Duration(hours: 9));
+    final now = DateTime.now();
 
     // dialog
     showCupertinoDialog(
@@ -85,7 +85,7 @@ class _TopPart extends StatelessWidget {
   Widget build(BuildContext context) {
     final theme = Theme.of(context);
     final textTheme = theme.textTheme;
-    final now = DateTime.now().add(const Duration(hours: 9));
+    final now = DateTime.now();
 
     return Expanded(
       child: Column(
